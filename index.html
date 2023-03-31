@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>To-do list by Eloiza Barbosa</title>
+  </head>
+  <body>
+    <h1>To do list</h1>
+
+    <div id="controls">
+      <div id="add-new">
+        <label>
+          Add new task:
+          <input type="text" value="Do the dishes" id="user-input" />
+        </label>
+        <input type="button" value="Add" id="add" />
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <ul id="list">
+        <li>
+          <label>
+            <input type="checkbox" checked />
+            Feed the cat
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" checked />
+            Make dinner for three
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" />
+            Take a shower
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" />
+            Turn on spotify
+          </label>
+        </li>
+      </ul>
+    </div>
+    <script src="/behaviour.js"></script>
+  </body>
+</html>
