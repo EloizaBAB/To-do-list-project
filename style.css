@@ -38,6 +38,13 @@ label {
 .add-btn {
   background-color: #9a99ff;
   color: #feff99;
-  padding: 4px;
+  padding: 2px;
   border: none;
+  border-radius: 1px;
+}
+#user-input {
+  color: #363558;
+  border: 0.5px solid #9a99ff;
+  background-color: #9a99ff;
+  opacity: 0.3;
 }
