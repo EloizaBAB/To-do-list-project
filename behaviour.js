@@ -1,7 +1,8 @@
+let tasklist = { tasks: [] };
 let userinput = document.getElementById("user-input");
-console.log(userinput);
+
 let wordlist = document.getElementById("list");
-console.log(wordlist);
+
 let addbutton = document.getElementById("add");
 addbutton.addEventListener("click", addTask);
 /**
@@ -19,4 +20,12 @@ function addTask() {
         <input type="checkbox"/> ${addedword}</li>`;
     userinput.value = "";
   }
+  todolist.tasks.push(addedword);
+  todolist.tasks.push();
+  addTask();
+  const fs = require("fs");
+  // Convert the todoList object to a string
+  let data = JSON.stringify(todolist);
+  // Write the string to a file called todolist.json
+  fs.writeFileSync("todolist.json", data);
 }

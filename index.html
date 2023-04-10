@@ -6,47 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
     <title>To-do list by Eloiza Barbosa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;1,500&family=Mukta&family=Nerko+One&family=Pacifico&family=Playfair+Display&family=Raleway:ital@1&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>To do list</h1>
+    <div class="todolist">
+      <h1>To do list</h1>
 
-    <div id="controls">
-      <div id="add-new">
-        <label>
-          Add new task:
-          <input type="text" value="Do the dishes" id="user-input" />
-        </label>
-        <input type="button" value="Add" id="add" />
+      <div id="controls">
+        <div id="add-new">
+          <label>
+            Add new task:
+            <input type="text" value="Do the dishes" id="user-input" />
+          </label>
+          <input type="button" value="+" id="add" class="add-btn" />
+        </div>
       </div>
-    </div>
 
-    <div class="content-wrapper">
-      <ul id="list">
-        <li>
-          <label>
-            <input type="checkbox" checked />
-            Feed the cat
-          </label>
-        </li>
-        <li>
-          <label>
-            <input type="checkbox" checked />
-            Make dinner for three
-          </label>
-        </li>
-        <li>
-          <label>
-            <input type="checkbox" />
-            Take a shower
-          </label>
-        </li>
-        <li>
-          <label>
-            <input type="checkbox" />
-            Turn on spotify
-          </label>
-        </li>
-      </ul>
+      <div class="content-wrapper">
+        <ul id="list">
+          <li>
+            <label>
+              <input type="checkbox" checked />
+              Feed the cat
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" checked />
+              Make dinner for three
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" />
+              Take a shower
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" />
+              Turn on spotify
+            </label>
+          </li>
+        </ul>
+      </div>
     </div>
     <script src="/behaviour.js"></script>
   </body>
