@@ -1,15 +1,10 @@
-main {
-  display: flex;
-  justify-content: center;
-  background-color: burlywood;
-  width: 40%;
-}
 li {
   list-style-type: none;
 }
 
 ul li:hover {
-  background: #ddd;
+  background-color: #9a99ff;
+  opacity: 0.8;
 }
 .todolist {
   display: block;
@@ -21,12 +16,16 @@ ul li:hover {
   padding: 30px;
 }
 body {
-  background: rgb(254, 255, 153);
-  background: linear-gradient(
+  background-color: #e5e5f7;
+  background-size: 20px 20px;
+  background-image: repeating-linear-gradient(
     0deg,
-    rgba(254, 255, 153, 1) 16%,
-    rgba(154, 153, 255, 1) 100%
+    #444cf7,
+    #444cf7 1px,
+    #e5e5f7 1px,
+    #e5e5f7
   );
+  font-family: "Quicksand", sans-serif;
 }
 h1 {
   text-align: center;
@@ -41,15 +40,15 @@ label {
 .add-btn {
   background-color: #9a99ff;
   color: #feff99;
-  padding: 2px 4px;
+  padding: 3px 4px;
   border: none;
   border-radius: 1px;
 }
 #user-input {
-  color: #363558;
+  color: #050408;
   border: 0.5px solid #9a99ff;
   background-color: #9a99ff;
-  opacity: 0.3;
+  opacity: 0.7;
 }
 div#controls {
   display: flex;
@@ -57,7 +56,4 @@ div#controls {
 }
 .add-sentence {
   font-size: 20px;
-}
-body {
-  font-family: "Quicksand", sans-serif;
 }
