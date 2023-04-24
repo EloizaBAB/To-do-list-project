@@ -21,7 +21,12 @@ ul li:hover {
   padding: 30px;
 }
 body {
-  background-image: url(db981562570f8b2179bf48fcbbf13c9b.jpeg);
+  background: rgb(254, 255, 153);
+  background: linear-gradient(
+    0deg,
+    rgba(254, 255, 153, 1) 16%,
+    rgba(154, 153, 255, 1) 100%
+  );
 }
 h1 {
   text-align: center;
@@ -32,13 +37,11 @@ h1 {
 label {
   color: #363558;
 }
-.controls {
-  margin: 30px;
-}
+
 .add-btn {
   background-color: #9a99ff;
   color: #feff99;
-  padding: 2px;
+  padding: 2px 4px;
   border: none;
   border-radius: 1px;
 }
@@ -47,4 +50,14 @@ label {
   border: 0.5px solid #9a99ff;
   background-color: #9a99ff;
   opacity: 0.3;
+}
+div#controls {
+  display: flex;
+  justify-content: center;
+}
+.add-sentence {
+  font-size: 20px;
+}
+body {
+  font-family: "Quicksand", sans-serif;
 }
